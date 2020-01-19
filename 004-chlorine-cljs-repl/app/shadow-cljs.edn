@@ -1,0 +1,18 @@
+; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ []
+
+ :builds
+ {:app
+  {:output-dir "public/js"
+   :asset-path "/js"
+   :target     :browser
+   ; notice the `src/main` in source-paths?  That's what allows
+   ; us to drop the `main` in `main.gross`
+   :modules    {:main {:init-fn main.app/main}}
+   :devtools
+   {:http-root    "public"
+    :http-port    8280}}}}
