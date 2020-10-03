@@ -1,0 +1,4 @@
+^{:auto-bundle :webpack
+  :watch-dirs  ["src"]
+  :css-dirs    ["resources/public"]}
+{:main hello-world.app}
