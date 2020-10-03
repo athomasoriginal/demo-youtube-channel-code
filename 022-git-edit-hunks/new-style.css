@@ -1,0 +1,87 @@
+/* Pillar Style Sheet
+   ============================================================================
+
+   Color Pallete - 22
+*/
+
+html {
+  --color-indigo-050: hsl(221, 68%, 93%);
+  --color-indigo-100: hsl(221, 78%, 86%);
+  --color-indigo-200: hsl(224, 67%, 76%);
+  --color-indigo-300: hsl(225, 57%, 67%);
+  --color-indigo-400: hsl(227, 50%, 59%);
+  --color-indigo-500: hsl(227, 42%, 51%);
+  --color-indigo-600: hsl(228, 45%, 45%);
+  --color-indigo-700: hsl(230, 49%, 41%);
+  --color-indigo-800: hsl(232, 51%, 36%);
+  --color-indigo-900: hsl(234, 62%, 26%);
+
+  --color-cyan-vivid-200: hsl(174, 96%, 78%);
+  --color-cyan-vivid-300: hsl(176, 87%, 67%);
+  --color-cyan-vivid-400: hsl(178, 78%, 57%);
+  --color-cyan-vivid-500: hsl(180, 77%, 47%);
+  --color-cyan-vivid-600: hsl(182, 85%, 39%);
+  --color-cyan-vivid-700: hsl(184, 90%, 34%);
+  --color-cyan-vivid-800: hsl(186, 91%, 29%);
+  --color-cyan-vivid-900: hsl(188, 91%, 23%);
+
+  --color-cool-grey-100: hsl(214, 15%, 91%);
+  --color-cool-grey-200: hsl(210, 16%, 82%);
+  --color-cool-grey-300: hsl(211, 13%, 65%);
+  --color-cool-grey-400: hsl(211, 10%, 53%);
+  --color-cool-grey-500: hsl(211, 12%, 43%);
+  --color-cool-grey-600: hsl(209, 14%, 37%);
+  --color-cool-grey-700: hsl(209, 18%, 30%);
+  --color-cool-grey-800: hsl(209, 20%, 25%);
+  --color-cool-grey-900: hsl(210, 24%, 16%);
+
+  --color-light: hsl(0, 0%, 100%);
+  --color-dark: hsl(0, 0%, 0%);
+
+  --pillar-base-size: 1rem;
+}
+
+.box,
+.box-medium {
+  --color-light: hsl(0, 0%, 100%);
+  --color-dark: hsl(0, 0%, 0%);
+  padding: var(--space-1);
+  border: var(--border-thin) solid;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box-medium {
+  padding: var(--space-medium);
+}
+
+.box *,
+.box-medium * {
+  color: inherit;
+}
+
+.box.invert,
+.box-medium.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+
+/* Components
+   -------------------------------------------------------------------------- */
+
+.yas-list {
+  color: pink;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.yas-list-item {
+  display: list-item;
+}
+
+.yas-link {
+  text-decoration: none;
+  cursor: pointer;
+}
