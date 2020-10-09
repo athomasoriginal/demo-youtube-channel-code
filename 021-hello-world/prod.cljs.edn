@@ -1,0 +1,5 @@
+^{:auto-bundle :webpack}
+{:main          hello-world.app
+ :optimizations :advanced
+ :pseudo-names true
+ :pretty-print true}

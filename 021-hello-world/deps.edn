@@ -4,14 +4,23 @@
  :deps
  {org.clojure/clojurescript {:mvn/version "1.10.773"}
   com.bhauman/figwheel-main {:mvn/version "0.2.11"}
-  reagent                   {:mvn/version "0.10.0"
-                             :exclusions [cljsjs/react cljsjs/react-dom]}}
+  reagent           {:mvn/version "0.10.0"
+                     :exclusions [cljsjs/react cljsjs/react-dom]}}
 
  :aliases
  {:dev
   {:main-opts ["--main"  "figwheel.main"
                "--build" "dev"
                "--repl"]}
+
+  :prod
+  {:main-opts ["--main"       "figwheel.main"
+               "--build-once" "prod"]}
+
+  :prod-serve
+  {:main-opts ["--main"       "figwheel.main"
+               "--build-once" "prod"
+               "--serve"]}
 
   :socket
   {:jvm-opts  ["-Dclojure.server.browser={:port,4444,:accept,cljs.server.browser/repl}"]
